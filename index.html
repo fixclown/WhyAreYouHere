@@ -21,7 +21,7 @@ p {
 	font-size: 1.5625em;
 }
 
-h1,p {
+h1,p,button,a {
 	color: rgb(163, 2, 2);
 	text-shadow: 0 0 3px #8d0101, 0 0 4px #066aff;
 }
@@ -37,13 +37,28 @@ h1,p {
 	text-align: center;
 }
 
+button {
+	font-size: 0.75em;
+	border-radius: 10px;
+	background-color: rgb(1, 1, 37);;
+}
+
+button:hover {
+	color: aqua;
+}
+
 </style>
 </head>
 <body>
 
 <div>
 	<h1>Page content not available</h1>
-	<p  id="flipdiv">The page you are looking for is no longer available, only if there was a way to dig through <strong>web archives</strong> and look at this same webpage in the past.</p>
+	<div id="flipdiv">
+		<p>The page you are looking for is no longer available, only if there was a way to dig through <strong>web archives</strong> and look at this same webpage in the past.</p>
+		<p><a href="DO_NOT_OPEN.rar" download="DO_NOT_OPEN">
+			<button type="button">You might want me, you might not... Choice is yours!</button>
+		</a></p>
+	</div>
 </div>
 </body>
 </html>
